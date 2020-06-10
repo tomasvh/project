@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="gridPane" gridLinesVisible="true" hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: lightgrey;" vgap="2.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.npcmaker.PreviewFullFXMLcontroller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="1.0" prefWidth="120.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1254.0" minWidth="10.0" prefWidth="1241.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="450.0" minHeight="0.0" prefHeight="120.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="668.0" minHeight="0.0" prefHeight="646.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TextArea prefHeight="120.0" prefWidth="120.0" promptText="Placeholder for Logo" style="-fx-background-color: grey;" />
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+            <children>
+                <Label layoutX="430.0" layoutY="14.0" text="Karaktärsgenerator till EON, 4e utgåvan.">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            <Label layoutX="556.0" layoutY="50.0" text="Förhandsvisning">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="70.0" textFill="#e41515" />
+            <Label layoutX="198.0" layoutY="87.0" text="OBS! Glöm inte att spara ändringar genom att antingen klicka på uppdatera för tabellerna eller &quot;spara karaktärsfält&quot; innan du går vidare till att tillverka PDF" textFill="#e10f0f" />
+            </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" />
+         </padding>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="fornamn" layoutX="20.0" layoutY="55.0" text="Förnamn">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="efternamn" layoutX="20.0" layoutY="80.0" text="Efternamn">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="folkslag" layoutX="20.0" layoutY="105.0" text="Folkslag">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="kon" layoutX="20.0" layoutY="155.0" text="Kön">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="efternamnText" layoutX="90.0" layoutY="75.0" promptText="att uppdatera">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="folkslagText" editable="false" layoutX="90.0" layoutY="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Label fx:id="religion" layoutX="20.0" layoutY="180.0" text="Religion">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="varv" layoutX="20.0" layoutY="205.0" text="Värv">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="arketyp" layoutX="20.0" layoutY="230.0" text="Ärketyp">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="miljo" layoutX="20.0" layoutY="255.0" text="Miljö">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="bakgrund" layoutX="20.0" layoutY="280.0" text="Bakgrund">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="provTotemText" editable="false" layoutX="90.0" layoutY="125.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="konText" layoutX="90.0" layoutY="150.0" promptText="att uppdatera">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="religionText" layoutX="90.0" layoutY="175.0" promptText="att uppdatera">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="varvText" layoutX="90.0" layoutY="200.0" promptText="att uppdatera">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="arketypText" editable="false" layoutX="90.0" layoutY="225.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="miljoText" editable="false" layoutX="90.0" layoutY="250.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="bakgrundText" editable="false" layoutX="90.0" layoutY="275.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="grundAttributTable" layoutX="250.0" layoutY="20.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="grundAttributNamn" prefWidth="104.0" sortable="false" text="Grundattribut" />
+                <TableColumn fx:id="grundAttributT" prefWidth="71.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="grundAttributMod" prefWidth="61.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <TableView fx:id="harleddaAttributTable" layoutX="495.0" layoutY="20.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="harleddAttribut" prefWidth="115.0" sortable="false" text="HärleddAttribut" />
+                <TableColumn fx:id="harleddT" minWidth="0.0" prefWidth="70.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="harleddMod" prefWidth="49.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <TableView fx:id="stridsFardigheterTable" layoutX="740.0" layoutY="20.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="sFardighet" prefWidth="110.0" sortable="false" text="Stridsfärdighet" />
+                <TableColumn fx:id="sFardighetT" prefWidth="75.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="sFardighetMod" prefWidth="60.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <TableView fx:id="rorelseFardigheterTable" layoutX="985.0" layoutY="20.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="rFardighet" prefWidth="110.0" sortable="false" text="Rörelsefärdighet" />
+                <TableColumn fx:id="rFardighetT" prefWidth="69.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="rFardighetMod" prefWidth="55.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <Label fx:id="valmaende" layoutX="20.0" layoutY="305.0" text="Välmående">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="365.0" text="Våld">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="395.0" text="Utsatthet">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="425.0" text="Övernaturligt">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="335.0" text="Avtrubbning:" />
+            <TableView fx:id="mystikFardighetTable" layoutX="250.0" layoutY="300.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="mFardighet" prefWidth="105.0" sortable="false" text="Mystikfärdighet" />
+                <TableColumn fx:id="mFardighetT" prefWidth="75.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="mFardighetMod" prefWidth="54.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <TableView fx:id="socialFardighetTable" layoutX="495.0" layoutY="300.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="socFardighet" prefWidth="116.0" sortable="false" text="Social färdighet" />
+                <TableColumn fx:id="socFardighetT" prefWidth="65.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="socFardighetMod" prefWidth="53.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <TableView fx:id="kunskapsFardighetTable" layoutX="740.0" layoutY="300.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="kFardighet" prefWidth="114.0" sortable="false" text="Kunskapsfärdighet" />
+                <TableColumn fx:id="kFardighetT" prefWidth="67.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="kFardighetMod" prefWidth="53.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <TableView fx:id="vildmarksFardighetTable" layoutX="985.0" layoutY="300.0" prefHeight="250.0" prefWidth="235.0">
+              <columns>
+                <TableColumn fx:id="vFardighet" prefWidth="118.0" sortable="false" text="VildmarksFärdighet" />
+                <TableColumn fx:id="vFardighetT" prefWidth="63.0" sortable="false" text="Tärningar" />
+                  <TableColumn fx:id="vFardighetMod" prefWidth="53.0" sortable="false" text="Mod" />
+              </columns>
+            </TableView>
+            <TextField fx:id="editEgenskap" editable="false" layoutX="250.0" layoutY="590.0" promptText="egenskap/färdighet" />
+            <Spinner fx:id="editTMod" editable="true" layoutX="495.0" layoutY="590.0" />
+            <Spinner fx:id="editMod" editable="true" layoutX="740.0" layoutY="590.0" />
+            <Label layoutX="432.0" layoutY="563.0" text="Välj ett fält i tabellerna ovan för att förändra värdena i menyerna nedan" />
+            <Button fx:id="uppdateraTableRow" layoutX="920.0" layoutY="568.0" mnemonicParsing="false" onAction="#uppdateraTableClicked" prefHeight="25.0" prefWidth="131.0" text="Uppdatera" />
+            <Button fx:id="uppdateraTextFalt" layoutX="63.0" layoutY="473.0" mnemonicParsing="false" onAction="#uppdateraFaltClicked" text="Spara Karaktärs Fält" />
+            <Button fx:id="dropTableRow" layoutX="920.0" layoutY="604.0" mnemonicParsing="false" onAction="#ignoreraClicked" text="Ignorera förändringar" />
+            <Spinner fx:id="avtrubbVSpinner" layoutX="90.0" layoutY="360.0" prefHeight="25.0" prefWidth="125.0" />
+            <Spinner fx:id="avtrubbUSpinner" layoutX="90.0" layoutY="390.0" prefHeight="25.0" prefWidth="125.0" />
+            <Spinner fx:id="avtrubbOSpinner" layoutX="90.0" layoutY="420.0" prefHeight="25.0" prefWidth="125.0" />
+            <TextField fx:id="fornamnText" layoutX="90.0" layoutY="50.0" promptText="att uppdatera">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Label layoutX="20.0" layoutY="130.0" text="provins/totem">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="valmaendeSpinner" layoutX="90.0" layoutY="300.0" prefHeight="25.0" prefWidth="125.0" />
+            <Label layoutX="432.0" layoutY="595.0" text="Tärningar" />
+            <Label layoutX="662.0" layoutY="595.0" text="Modifikation" />
+            <Label layoutX="20.0" layoutY="515.0" text="Primärt karaktärsdrag">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="570.0" text="Sekundärt karaktärsdrag">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="primKarLastCheck" layoutX="174.0" layoutY="539.0" mnemonicParsing="false" text="låst" />
+            <CheckBox fx:id="sekKarLastCheck" layoutX="174.0" layoutY="594.0" mnemonicParsing="false" text="låst" />
+            <TextField fx:id="primKarText" layoutX="20.0" layoutY="535.0" />
+            <TextField fx:id="sekKarText" layoutX="20.0" layoutY="590.0" />
+            <Label layoutX="24.0" layoutY="12.0" text="För och efternamn på karaktären" textFill="#d31212" />
+            <Label layoutX="24.0" layoutY="29.0" text="blir filnamnet på PDF filen." textFill="#d00f0f" />
+         </children>
+        </AnchorPane>
+
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="buttonReturn" layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreenReturn" text="Åter till Meny" />
+            <Button fx:id="buttonConfig" layoutX="16.0" layoutY="60.0" mnemonicParsing="false" onAction="#changeScreenVal" prefHeight="25.0" prefWidth="90.0" text="Åter till val" />
+            <Button fx:id="fullToPdf" layoutX="15.0" layoutY="457.0" mnemonicParsing="false" onAction="#printToPdfFull" prefHeight="25.0" prefWidth="90.0" text="Fullständig" />
+            <Button fx:id="mediumToPdf" layoutX="15.0" layoutY="504.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Medium" />
+            <Button fx:id="kompaktToPdf" layoutX="15.0" layoutY="552.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Kompakt" />
+            <Label layoutX="36.0" layoutY="413.0" text="Till PDF:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <GridPane.margin>
+            <Insets right="2.0" top="2.0" />
+         </GridPane.margin></AnchorPane>
+    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</GridPane>
